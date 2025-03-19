@@ -1,1 +1,2 @@
-# website
+# Interactive portfolio website
+This is my personal portfolio website built using HTML, CSS, and JavaScript to showcase my projects and skills. It features a sleek dark theme with smooth animations and an easy-to-use sidebar navigation. The site includes sections like Home, About, Projects, and Contact, making it simple to explore my work. You’ll find links to some of my projects, including an art display, a web resume builder, and a brain tumor detection model.
