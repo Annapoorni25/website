@@ -1,0 +1,274 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #d19494;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    margin: 10px;
+    position: fixed;
+    width: 200px;
+    height: 90%;
+    background: #894b4b;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: white;
+}
+
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #fff;
+}
+
+/* Sections */
+.section {
+    margin-left: 220px;
+    padding: 100px 50px;
+    min-height: 100vh;
+    transition: 0.5s;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 3em;
+}
+
+.home .name {
+    color: #360505;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #ff3b3b;
+}
+
+/* Projects */
+.projects .project-list {
+    display: flex;
+    gap: 20px;
+}
+
+.project-card {
+    width: 300px;
+    background: #714c4c;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-box{
+    display: inline-block;
+            padding: 15px 30px;
+            background: white;
+            color: rgb(0, 0, 0);
+            font-size: 10px;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none; /* Remove default link underline */
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.project-card .img2 {
+    height: 250px;
+    width: 200px;
+}
+
+.img1{
+    height: 200px;
+}
+.img3{
+    height: 250px;
+}
+
+.bitmoji{
+    position: absolute;
+    right: 50px; /* Moves bitmoji further right */
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+}
+
+.bitmoji:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.content{
+    display: flex;
+    text-align: justify;
+    text-shadow: #200404;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.nav-bar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.nav-bar{
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    top: 100px;
+    margin: 10px 0px;
+    padding-top: 20px;
+    padding-left: 60px;
+    z-index: 1000;
+}
+    
+
+
+.nav-button {
+    color: rgb(171, 202, 176);
+    text-decoration: none;
+    background-color: #200404;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 100px;
+    font-size: 16px;
+    height: 30px;
+    width: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 15px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+.nav-button:hover {
+    background-color: #9f997e;
+    transform: scale(1.05); /* Adds a hover effect */
+}
+
+/*section {
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}*/
+
+.nav-button i{
+    position: relative;
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+}
+
+.name{
+    font-family: Merriweather;
+    font-size: 30px;
+}
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .bitmoji {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation: bounce 1s infinite ease-in-out; /* Default animation */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Bounce animation (default) */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Wave animation for hover effect */
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.bitmoji:hover {
+    animation: wave 0.3s ease-in-out; /* Apply wave animation on hover */
+    transform: scale(1.1); /* Slightly enlarge the bitmoji */
+}
+.home{
+    padding: 0;
+    gap: 0px;
+}
+.home h1 {
+    padding-top: 150px;
+    padding-right: 100px;
+    display: inline-block; /* Keeps text together */
+    white-space: nowrap;   /* Prevents breaking */
+    margin-left: 0;
+}
+
+.name1{
+    color: #360505;
+}
